@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5z'/%3E%3Cpath d='M2 17l10 5 10-5'/%3E%3Cpath d='M2 12l10 5 10-5'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Origin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'origin-bg': '#000000',
+              'origin-component-bg': '#1C1C1E',
+              'origin-border': '#2D2D2F',
+              'origin-primary': '#0A84FF', // A bright blue from screenshots
+              'origin-secondary': '#30D158', // A bright green from screenshots
+              'origin-text-primary': '#FFFFFF',
+              'origin-text-secondary': '#8E8E93',
+              'origin-text-tertiary': '#48484A',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "firebase/": "https://aistudiocdn.com/firebase@^10.12.4/",
+    "firebase/app": "https://aistudiocdn.com/firebase@^10.12.4/app",
+    "firebase/auth": "https://aistudiocdn.com/firebase@^10.12.4/auth",
+    "firebase/firestore": "https://aistudiocdn.com/firebase@^10.12.4/firestore"
+  }
+}
+</script>
+</head>
+  <body class="bg-origin-bg text-origin-text-primary font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
